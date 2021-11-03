@@ -1,0 +1,28 @@
+
+.col-12{
+    padding: 15px;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col-12 i{
+    margin-right: 15px;
+    font-size: 30px;
+}
+
+.bi-activity{
+    color: red;
+
+
+}
+
+.bi-alarm{
+color: blue;
+}
+
+
+.bi-alt{
+color: yellow;
+}

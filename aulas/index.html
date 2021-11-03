@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <h1>Seção 03</h1>
+    <button class="btn btn-primary">Cor de Fundo</button>
+
+    <div class="container">
+        <h1>Conteúdo do container</h1>
+        <p>Texto aqui</p>
+        <p>Texto aqui</p>
+        <p>Texto aqui</p>
+        <p>Texto aqui</p>
+
+    </div>
+    <div class="container-fluid">
+        <h1>Conteúdo do container-fluid</h1>
+        <p>Texto aqui</p>
+        <p>Texto aqui</p>
+        <p>Texto aqui</p>
+        <p>Texto aqui</p>
+
+    </div>
+    <div class="container-sm">
+        <h1>Conteúdo do container-sm</h1>
+        <p>Texto aqui</p>
+        <p>Texto aqui</p>
+        <p>Texto aqui</p>
+        <p>Texto aqui</p>
+
+    </div>
+    <div class="container-md">
+        <h1>Conteúdo do container-md</h1>
+        <p>Texto aqui</p>
+        <p>Texto aqui</p>
+        <p>Texto aqui</p>
+        <p>Texto aqui</p>
+
+    </div>
+    <div class="container-lg">
+        <h1>Conteúdo do container-lg</h1>
+        <p>Texto aqui</p>
+        <p>Texto aqui</p>
+        <p>Texto aqui</p>
+        <p>Texto aqui</p>
+
+    </div>
+
+    <!-- GRID -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p>Produto A</p>
+            </div>
+            <div class="col">
+                <p>Produto B</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>Produto A</p>
+            </div>
+            <div class="col">
+                <p>Produto B</p>
+            </div>
+            <div class="col">
+                <p>Produto C</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">texto aqui</div>
+            <div class="col-2">texto aqui</div>
+        </div>
+        <div class="row">
+            <div class="col-6">texto aqui</div>
+            <div class="col-6">texto aqui</div>
+        </div>
+        <div class="row">
+            <div class="col-4">texto aqui</div>
+            <div class="col-4">texto aqui</div>
+            <div class="col-4">texto aqui</div>
+        </div>
+    </div>
+    <!-- LIMITAÇÃO DE COLUNAS -->
+    <div class="container">
+        <div class="row row-cols-2">
+            <div class="col-4">aa</div>
+            <div class="col-6">aa</div>
+        </div>
+    </div>
+    <!-- ALINHAMENTO VERTICAL -->
+    <div class="container vertical">
+        <div class="row align-items-center">
+            <div class="col-6"></div>
+            <div class="col-6"></div>
+        </div>
+    </div>
+
+    <!-- Alinhamento Horizontal -->
+    <div class="container vertical">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-3"></div>
+        </div>
+    </div>
+    <!-- Alinahmento do item  -->
+    <div class="container vertical">
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-3 align-self-center"></div>
+            <div class="col-3 align-self-end"></div>
+            <div class="col-3"></div>
+        </div>
+    </div>
+    <!-- order de cnteúdo -->
+    <div class="container vertical">
+        <div class="row">
+            <div class="col-3 order-3">3</div>
+            <div class="col-3 order-1">1</div>
+            <div class="col-3 order-4">4</div>
+            <div class="col-3 order-2">2</div>
+        </div>
+    </div>
+
+    <!-- offset -->
+    <div class="container vertical" id="offset">
+        <div class="row">
+            <div class="col-md-3 offset-md-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 offset-md-3"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 offset-md-4"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 offset-md-5"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 offset-md-6"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 offset-md-7"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 offset-md-8"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 offset-md-9"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 offset-md-10"></div>
+        </div>
+    </div>
+
+    <!-- gutters -->
+    <div class="container" id="gutter ">
+
+        <div class="row gx-4">
+            <div class="col">
+                <p>GX</p>
+            </div>
+            <div class="col">
+                <p>GX</p>
+            </div>
+        </div>
+        <div class="row gx-3">
+            <div class="col">
+                <p>GX</p>
+            </div>
+            <div class="col">
+                <p>GX</p>
+            </div>
+        </div>
+        <div class="row g-2">
+            <div class="col">
+                <p>GX</p>
+            </div>
+            <div class="col">
+                <p>GX</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

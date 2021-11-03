@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"
+        defer></script>
+</head>
+
+<body>
+
+    <!-- Accordion -->
+
+    <div class="col-4 m-4">
+        <h2>Accordion</h2>
+        <div class="acccordion" id="accordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" area-expanded="true" are-controls="collapseOne">
+                        Item 1</button>
+                </h2>
+                <div class="accordion-collapse collapse show" id="collapseOne" area-labelledby="headingOne"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body">
+                        <p>Este é o ítem e a sua descrição</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" area-expanded="true" are-controls="collapseTwo">
+                        Item 2</button>
+                </h2>
+                <div class="accordion-collapse collapse " id="collapseTwo" area-labelledby="headingTwo"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body">
+                        <p>Este é o ítem e a sua descrição</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThere">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThere" area-expanded="true" are-controls="collapseThere">
+                        Item 3</button>
+                </h2>
+                <div class="accordion-collapse collapse " id="collapseThere" area-labelledby="headingThere"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body">
+                        <p>Este é o ítem e a sua descrição</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Alertas -->
+
+    <div class="col-6 m-4">
+        <div class="alert alert-primary" role="alert">
+            Esta é uma mensagem comum do sistema
+        </div>
+        <div class="alert alert-success" role="alert">
+            Usuário cadastrado com sucesso.
+        </div>
+        <div class="alert alert-danger" role="alert">
+            Não foi possível fazer o login.
+        </div>
+        <!-- com link -->
+        <div class="alert alert-warning" role="alert">
+            Não encontramos o seu pedido, faça uam solicitação <a href="#" class="alert-link">clicando aqui</a>.
+            respondemos o quanto antes.
+        </div>
+        <!-- com msi conteudo -->
+        <div class="alert alert-success" role="alert">
+            <h4 class="alert-heading">Pedido realizado</h4>
+            <p>recebemos o seu pedido, e já estamos preparando para o envio.</p>
+
+            <hr />
+            <p class="mb-0">Caso você precise de mais informação, entre em contato <a href="#"
+                    class="alert-link">clicando aqui</a>.</p>
+        </div>
+
+        <!-- com icone de fechar -->
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong>Ops!</strong> Aconteceu algo errado no sistema.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" area-label="Close"></button>
+        </div>
+
+    </div>
+    <!-- Badge -->
+    <div class="col-6 m-4">
+        <h1>Cadeira Game X400 <span class="badge bg-secondary">New</span></h1>
+        <h1>Fone de Ouvido XY710 <span class="badge bg-danger">10% off</span></h1>
+        <button type="button" class="btn btn-dark">
+            Mensagens <span class="badge bg-success">3</span>
+        </button>
+    </div>
+    <!-- Breadcrumb -->
+    <!-- mostra o caminho que o usuário já percorreu no site -->
+    <div class="container">
+        <nav area-label="creadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Catálogo</a></li>
+                <li class="breadcrumb-item active" area-current="page">Pagina de Produtos</li>
+            </ol>
+        </nav>
+        <h2>Páginia de produtos</h2>
+        <p>Descrição do produto</p>
+    </div>
+
+    <!-- Buttons -->
+    <div class="container">
+        <div class="mb-4">
+            <button class="btn btn-primary">
+                Botão
+            </button> <button class="btn btn-success">
+                Botão
+            </button> <button class="btn btn-info">
+                Botão
+            </button>
+        </div>
+        <div class="mb-4">
+            <a href="#" class="btn btn-danger">Deletar</a>
+        </div>
+        <div class="col-3 mb-4">
+            <div class="d-grid m-4">
+                <button class="btn btn-primary">Botão de bloco</button>
+            </div>
+        </div>
+        <div class="mb-4">
+            <button class="btn btn-warning" disabled>Desabilitado</button>
+        </div>
+    </div>
+
+    <!-- Buttons Group -->
+    <div class="container mb-4">
+        <h2>Configure a seção:</h2>
+        <div class="btn-group" role="group" area-label="exemplo">
+            <button class="btn btn-success" type="button">Diminuir</button>
+            <button class="btn btn-success" type="button">Confirmar</button>
+            <button class="btn btn-success" type="button">Aumentar</button>
+        </div>
+        <div class="btn-group" role="group" area-label="exemplo2">
+            <button class="btn btn-outline-secondary" type="button">1</button>
+            <button class="btn btn-outline-secondary" type="button">2</button>
+            <button class="btn btn-outline-secondary" type="button">3</button>
+            <button class="btn btn-outline-secondary" type="button">4</button>
+        </div>
+        <h2>Vertical</h2>
+        <div class="btn-group-vertical" role="group" area-label="exemplo3">
+            <button class="btn btn-warning" type="button">opção 1</button>
+            <button class="btn btn-warning" type="button">opção 2</button>
+            <button class="btn btn-warning" type="button">opção 3</button>
+
+        </div>
+    </div>
+
+    <!-- Cards -->
+    <div class="container mb-4">
+        <div class="card mb-4">
+            <img src="https://via.placeholder.com/300" alt="Minha imagem" class="card-img-top">
+            <div class="card-body">
+                <p class="card-text">Esta é a descrição do produto</p>
+            </div>
+        </div>
+        <div class="card mb-4">
+            <img src="https://via.placeholder.com/300" alt="Minha imagem" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Título do card</h5>
+                <p class="card-text">Esta é a descrição do produto</p>
+                <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+        </div>
+        <div class="card mb-4">
+
+            <div class="card-body">
+                <h5 class="card-title">Título do card</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Um subtitulo</h6>
+                <p class="card-text">Esta é a descrição do produto</p>
+                <a href="#" class="card-link">Comprar</a>
+                <a href="#" class="card-link">cancelar</a>
+            </div>
+        </div>
+        <div class="card text-center" id="card-banner">
+            <div class="card-header">
+                Card Banner
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Um título legal</h5>
+                <p class="card-text">
+                    Esta é a descrição deste banner, vamos colocar uma grande descrição aqui.
+                </p>
+                <a href="#" class="btn  btn-success">Acessar Oferta</a>
+            </div>
+            <div class="card-footer">
+                Faltam 2 dias
+            </div>
+        </div>
+    </div>
+
+    <!-- Slider -->
+
+    <div class="container mb-4">
+
+        <div class="col-8">
+            <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button class="active" type="button" data-bs-target="#carousel" data-bs-slide-to="0"
+                        data-current="true" , area-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" data-current="true" ,
+                        area-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" data-current="true" ,
+                        area-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://via.placeholder.com/300" alt="Descrição 1" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://via.placeholder.com/300" alt="Descrição 2" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://via.placeholder.com/300" alt="Descrição 3" class="d-block w-100">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" area-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span></button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" area-hidden="true"></span>
+                    <span class="visually-hidden">Next</span></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide com texto -->
+    <div class="container mb-4">
+
+        <div class="col-8">
+            <div id="carousel2" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button class="active" type="button" data-bs-target="#carousel2" data-bs-slide-to="0"
+                        data-current="true" , area-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carousel2" data-bs-slide-to="1" data-current="true" ,
+                        area-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carousel2" data-bs-slide-to="2" data-current="true" ,
+                        area-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://via.placeholder.com/300" alt="Descrição 1" class="d-block w-100">
+                        <div class="carousel-caption">
+                            <h5>Primeiro slide </h5>
+                            <p>Alguma decrição aqui</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://via.placeholder.com/300" alt="Descrição 2" class="d-block w-100">
+                        <div class="carousel-caption">
+                            <h5>Segundo slide </h5>
+                            <p>Alguma decrição aqui</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://via.placeholder.com/300" alt="Descrição 3" class="d-block w-100">
+                        <div class="carousel-caption">
+                            <h5>terceiro slide </h5>
+                            <p>Alguma decrição aqui</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" area-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span></button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" area-hidden="true"></span>
+                    <span class="visually-hidden">Next</span></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Close button -->
+
+    <div class="container mb-4">
+        <p>Clique para fechar <button class="btn-close" type="button" area-label="Close"></button></p>
+        <a href="#" class="btn btn-danger">Fechar<button class="btn-close" type="button"
+                area-label="Close"></button></a>
+        <p>Clique para fechar (DESABILITADO) <button class="btn-close" type="button" area-label="Close"
+                disabled></button></p>
+
+    </div>
+
+    <!-- Collapse -->
+
+    <div class="container mb-4">
+        <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#collapse"
+            aria-expanded="false" aria-controls="collapse">Clique para exibir/esconder</button>
+        <div class="collapse" id="collapse">
+            <div class="col-12 mt-4">
+                Este é o tetxo que pode ser escondido ou não, dependendo do click do botão.
+            </div>
+        </div>
+    </div>
+
+    <!-- DropDown -->
+    <div class="container mb-4">
+        <div class="dropdown mb-4">
+            <a href="" class="btn btn-secondary dropdown-toggle" role="button" id="dropdown" data-bs-toggle="dropdown"
+                aria-expanded="false">Clique aqui</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown">
+                <li><a href="" class="dropdown-item">Link 1</a></li>
+                <li><a href="" class="dropdown-item">Link 2</a></li>
+                <li><a href="" class="dropdown-item">Link 3</a></li>
+                <li><a href="" class="dropdown-item">Link 4</a></li>
+            </ul>
+        </div>
+        <!-- A DIREITA -->
+        <div class="dropdown mb-4 dropend">
+            <a href="" class="btn btn-secondary dropdown-toggle" role="button" id="dropdown-direita"
+                data-bs-toggle="dropdown" aria-expanded="false">Clique aqui</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown-direita">
+                <li><a href="" class="dropdown-item">Link 1</a></li>
+                <li><a href="" class="dropdown-item">Link 2</a></li>
+                <li><a href="" class="dropdown-item">Link 3</a></li>
+                <li><a href="" class="dropdown-item">Link 4</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="container mb-4">
+        <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#modal">Abrir
+            Modal</button>
+
+    </div>
+    <!-- container modal -->
+    <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel">Este é o título</h5>
+                    <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Aqui você pode colcar qualquer coisa</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Fechar</button>
+                    <button class="btn btn-success" type="button" data-bs-dismiss="modal">Salvar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+
+
+
+</body>
+
+</html>

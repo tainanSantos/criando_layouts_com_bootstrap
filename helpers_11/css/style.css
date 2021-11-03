@@ -1,0 +1,26 @@
+body {
+    padding-bottom: 1000px;
+}
+
+.box {
+    background-color: red;
+    height: 50px;
+}
+
+.box.float-end {
+    background-color: blue;
+    width: 50px;
+}
+
+.box-sticky {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(77, 170, 77);
+}
+
+
+.box-fixed{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
